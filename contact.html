@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact &amp; Connect — MD Asfir Ahammed Afif</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Contact & Inquiries — MD Asfir Ahammed Afif">
+  <meta name="description"
+    content="Get in touch with MD Asfir Ahammed Afif — Full Stack Software Engineer & UI/UX Specialist. Reach out via email, WhatsApp (+8801618394205), Facebook Messenger, or phone.">
+  <meta name="keywords"
+    content="Contact Asfir Ahammed, Hire Full Stack Developer, React Developer Contact, Web Developer Bangladesh, MD Asfir Ahammed Afif email phone">
+  <meta name="author" content="MD Asfir Ahammed Afif">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#141313">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://mdasfirahammedafif.github.io/contact.html">
+
+  <!-- Favicons & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="alternate icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mdasfirahammedafif.github.io/contact.html">
+  <meta property="og:site_name" content="MD Asfir Ahammed Afif | Software Portfolio">
+  <meta property="og:title" content="Contact &amp; Connect — MD Asfir Ahammed Afif">
+  <meta property="og:description"
+    content="Direct inquiry channels for full stack development, MERN architecture, consulting, and engineering collaborations.">
+  <meta property="og:image" content="https://mdasfirahammedafif.github.io/assets/img/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact &amp; Inquiries — MD Asfir Ahammed Afif">
+  <meta name="twitter:description"
+    content="Direct inquiry channels for full stack development, MERN architecture, and UI/UX engineering.">
+  <meta name="twitter:image" content="https://mdasfirahammedafif.github.io/assets/img/og-preview.png">
+
+  <!-- Schema.org ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact MD Asfir Ahammed Afif",
+    "description": "Contact channels for MD Asfir Ahammed Afif — Full Stack Software Engineer",
+    "url": "https://mdasfirahammedafif.github.io/contact.html",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "MD Asfir Ahammed Afif",
+      "email": "asfirahammed8@gmail.com",
+      "telephone": "+8801618394205"
+    }
+  }
+  </script>
+
+  <!-- CRITICAL: Instant dark background before any CSS -->
+  <style>
+    html { background-color: #141313; color: #e5e2e1; }
+    body {
+      background-color: transparent !important;
+      background-image: none !important;
+      color: #e5e2e1; margin: 0; padding: 0; min-height: 100vh;
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    /* Page Transition Animations for Main Content */
+    main {
+      opacity: 0;
+      transform: translateY(16px) scale(0.985);
+      transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    main.page-loaded {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    main.page-exiting {
+      opacity: 0;
+      transform: translateY(-12px) scale(0.985);
+      transition: opacity 0.28s cubic-bezier(0.7, 0, 0.84, 0), transform 0.28s cubic-bezier(0.7, 0, 0.84, 0);
+    }
+
+    /* Top Transition Progress Bar */
+    #page-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2.5px;
+      width: 0%;
+      background: #ffffff;
+      z-index: 10000;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    /* Header: Completely transparent at top, frosted glass only when scrolled */
+    .glass-header {
+      background: transparent !important;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      border-bottom: 1px solid transparent !important;
+      transition: background 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  -webkit-backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-header.is-scrolled {
+      background: rgba(20, 19, 19, 0.3) !important;
+      backdrop-filter: blur(16px) saturate(180%) !important;
+      -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+    }
+    /* ── Hero entrance animation base ── */
+    .hero-anim {
+      opacity: 0;
+      transform: translateY(28px);
+      filter: blur(4px);
+    }
+    .hero-anim.hero-in {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+    .hero-anim-1 {
+      transition: opacity 0.7s cubic-bezier(.16,1,.3,1) 0.1s,
+        transform 0.7s cubic-bezier(.16,1,.3,1) 0.1s,
+        filter 0.7s cubic-bezier(.16,1,.3,1) 0.1s;
+    }
+    .hero-anim-2 {
+      transition: opacity 0.9s cubic-bezier(.16,1,.3,1) 0.28s,
+        transform 0.9s cubic-bezier(.16,1,.3,1) 0.28s,
+        filter 0.9s cubic-bezier(.16,1,.3,1) 0.28s;
+    }
+    .hero-anim-3 {
+      transition: opacity 0.75s cubic-bezier(.16,1,.3,1) 0.5s,
+        transform 0.75s cubic-bezier(.16,1,.3,1) 0.5s,
+        filter 0.75s cubic-bezier(.16,1,.3,1) 0.5s;
+    }
+    .hero-anim-4 {
+      transition: opacity 0.75s cubic-bezier(.16,1,.3,1) 0.68s,
+        transform 0.75s cubic-bezier(.16,1,.3,1) 0.68s,
+        filter 0.75s cubic-bezier(.16,1,.3,1) 0.68s;
+    }
+  </style>
+
+  <!-- Hero loader bar element -->
+  <div id="hero-loader-bar" style="position:fixed;top:0;left:0;height:2px;width:0%;background:#fff;z-index:9999;"></div>
+
+  <!-- PRELOAD: Critical Latin Inter font -->
+  <link rel="preload" href="assets/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+    as="font" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Local Assets -->
+  <link href="assets/css/fonts-main.css" rel="stylesheet">
+  <link href="assets/css/material-symbols.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <script src="assets/js/tailwind.cdn.js"></script>
+  <script id="tailwind-config">try {
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "tertiary": "#ffffff",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#313030",
+              "surface-subtle": "#171717",
+              "on-secondary-fixed": "#1c1b1b",
+              "error": "#ffb4ab",
+              "tertiary-fixed": "#e2e2e2",
+              "outline": "#8e9192",
+              "outline-variant": "#444748",
+              "surface-tint": "#c6c6c7",
+              "surface": "#141313",
+              "surface-container-low": "#1c1b1b",
+              "inverse-primary": "#5d5f5f",
+              "on-surface-variant": "#c4c7c8",
+              "surface-container-highest": "#353434",
+              "on-secondary-fixed-variant": "#474646",
+              "text-muted": "#888888",
+              "on-secondary": "#313030",
+              "secondary-fixed": "#e5e2e1",
+              "inverse-surface": "#e5e2e1",
+              "primary-container": "#e2e2e2",
+              "surface-container-high": "#2a2a2a",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-container": "#636565",
+              "secondary": "#c9c6c5",
+              "accent-red": "#E11D48",
+              "surface-bright": "#3a3939",
+              "on-background": "#e5e2e1",
+              "background": "#141313",
+              "on-primary-container": "#636565",
+              "on-error": "#690005",
+              "on-primary-fixed-variant": "#454747",
+              "surface-variant": "#353434",
+              "on-tertiary-fixed-variant": "#454747",
+              "secondary-fixed-dim": "#c9c6c5",
+              "surface-dim": "#141313",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#1a1c1c",
+              "surface-container": "#201f1f",
+              "error-container": "#93000a",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "on-primary": "#2f3131",
+              "border-low-contrast": "#262626",
+              "primary": "#ffffff",
+              "tertiary-container": "#e2e2e2",
+              "on-surface": "#e5e2e1",
+              "secondary-container": "#4a4949",
+              "primary-fixed-dim": "#c6c6c7",
+              "on-secondary-container": "#bab8b7",
+              "primary-fixed": "#e2e2e2",
+              "on-tertiary": "#2f3131"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+            "spacing": {
+              "stack-md": "1.5rem",
+              "stack-lg": "3rem",
+              "container-max": "1440px",
+              "section-gap": "10rem",
+              "gutter": "2rem",
+              "margin-mobile": "1.5rem",
+              "stack-sm": "0.5rem"
+            },
+            "fontFamily": {
+              "display-hero": ["Inter", "ui-sans-serif", "sans-serif"],
+              "headline-md": ["Inter", "ui-sans-serif", "sans-serif"],
+              "body-md": ["Inter", "ui-sans-serif", "sans-serif"],
+              "label-mono": ["JetBrains Mono", "monospace"],
+              "headline-lg": ["Inter", "ui-sans-serif", "sans-serif"],
+              "body-lg": ["Inter", "ui-sans-serif", "sans-serif"],
+              "display-hero-mobile": ["Inter", "ui-sans-serif", "sans-serif"]
+            },
+            "fontSize": {
+              "display-hero": ["120px", { "lineHeight": "110px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+              "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+              "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+              "label-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+              "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+              "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+              "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+            }
+          }
+        }
+      }
+    } catch (_e) { }</script>
+</head>
+
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+  <!-- Top Page Transition Progress Bar -->
+  <div id="page-progress-bar"></div>
+  <!-- Background Shader -->
+  <div class="fixed inset-0 w-full h-full pointer-events-none -z-10" style="display:block;">
+    <canvas id="bg-shader-contact" style="display:block;width:100%;height:100%"></canvas>
+    <script>
+      (function () {
+        var c = document.getElementById('bg-shader-contact');
+        function ss() { var w = c.clientWidth || 1280, h = c.clientHeight || 720; if (c.width !== w || c.height !== h) { c.width = w; c.height = h; } }
+        if (typeof ResizeObserver !== 'undefined') { new ResizeObserver(ss).observe(c); } ss();
+        var gl = c.getContext('webgl') || c.getContext('experimental-webgl'); if (!gl) return;
+        var vs = 'attribute vec2 a_position;varying vec2 v_texCoord;void main(){v_texCoord=a_position*0.5+0.5;gl_Position=vec4(a_position,0.0,1.0);}';
+        var fs = 'precision highp float;varying vec2 v_texCoord;uniform float u_time;uniform vec2 u_resolution;void main(){vec2 uv=v_texCoord;vec2 p=-1.0+2.0*uv;p.x*=u_resolution.x/u_resolution.y;float v=0.0;vec2 shift=vec2(100.0);for(int i=0;i<4;i++){v+=sin(p.x*2.0+u_time*0.2);p=p*1.5+shift;v+=cos(p.y*1.2+u_time*0.15+v);}float intensity=smoothstep(-0.5,1.5,sin(v*2.0)*0.5+0.5);vec3 cA=vec3(0.078,0.074,0.074);vec3 cB=vec3(0.18,0.18,0.18);vec3 col=mix(cA,cB,intensity);col+=fract(sin(dot(uv,vec2(12.9898,78.233)))*43758.5453)*0.02;gl_FragColor=vec4(col,1.0);}';
+        function cs(t, s) { var sh = gl.createShader(t); gl.shaderSource(sh, s); gl.compileShader(sh); return sh; }
+        var prog = gl.createProgram(); gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs)); gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(prog); gl.useProgram(prog);
+        var buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+        var pos = gl.getAttribLocation(prog, 'a_position'); gl.enableVertexAttribArray(pos); gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+        var uT = gl.getUniformLocation(prog, 'u_time'), uR = gl.getUniformLocation(prog, 'u_resolution'), uM = gl.getUniformLocation(prog, 'u_mouse');
+        var mouse = { x: c.width / 2, y: c.height / 2 };
+        window.addEventListener('mousemove', function (e) { var r = c.getBoundingClientRect(); if (r.width && r.height) { mouse.x = ((e.clientX - r.left) / r.width) * c.width; mouse.y = (1 - (e.clientY - r.top) / r.height) * c.height; } });
+        function render(t) { if (typeof ResizeObserver === 'undefined') ss(); gl.viewport(0, 0, c.width, c.height); if (uT) gl.uniform1f(uT, t * 0.001); if (uR) gl.uniform2f(uR, c.width, c.height); if (uM) gl.uniform2f(uM, mouse.x, mouse.y); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); requestAnimationFrame(render); }
+        render(0);
+      })();
+    </script>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="site-header" class="glass-header text-primary top-0 sticky z-50">
+    <div class="flex justify-between items-center w-full px-gutter py-stack-sm max-w-container-max mx-auto">
+      <div class="flex-1 flex justify-start"><a
+          class="text-headline-md font-headline-md font-black tracking-tighter text-primary" href="index.html">AFIF</a>
+      </div>
+      <div
+        class="hidden md:flex items-center justify-center gap-8 text-label-mono font-label-mono uppercase tracking-widest text-[11px]">
+        <a class="text-text-muted hover:text-primary transition-all duration-300" href="index.html">Home</a>
+        <a class="text-text-muted hover:text-primary transition-all duration-300" href="about.html">About</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300" href="contact.html">Contact</a>
+      </div>
+      <div class="flex-1 flex justify-end items-center gap-4">
+        <a class="hidden md:flex items-center gap-2 text-label-mono font-label-mono uppercase tracking-widest text-primary border border-primary px-4 py-2 hover:bg-primary hover:text-on-primary transition-all duration-300 text-[11px]"
+          href="contact.html">Let's Talk<span class="material-symbols-outlined text-[16px]">north_east</span></a>
+        <button onclick="toggleMobileNav()" class="md:hidden text-primary p-2 hover:opacity-70 transition-opacity"><span
+            id="mobile-nav-icon" class="material-symbols-outlined text-[26px]">menu</span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer (Slide-Up) -->
+  <nav id="mobile-nav-drawer"
+    style="transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);"
+    class="md:hidden fixed bottom-0 left-0 right-0 z-50">
+    <div
+      class="bg-surface-subtle/95 backdrop-blur-xl border-t border-border-low-contrast rounded-t-3xl shadow-2xl px-6 pt-4 pb-10">
+      <!-- Handle Bar -->
+      <div class="w-12 h-1 bg-border-low-contrast rounded-full mx-auto mb-5"></div>
+      <p class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest text-[11px] mb-4 text-center">
+        Navigation</p>
+      <div class="grid grid-cols-3 gap-3">
+        <a onclick="closeMobileNav()" href="index.html"
+          class="flex items-center justify-center gap-2 px-3 py-3 border border-border-low-contrast bg-surface-container-lowest hover:border-primary hover:bg-primary hover:text-on-primary text-primary transition-all duration-200 rounded-xl">
+          <span class="material-symbols-outlined text-[18px]">home</span>
+          <span class="text-label-mono font-label-mono text-[11px] uppercase">Home</span>
+        </a>
+        <a onclick="closeMobileNav()" href="about.html"
+          class="flex items-center justify-center gap-2 px-3 py-3 border border-border-low-contrast bg-surface-container-lowest hover:border-primary hover:bg-primary hover:text-on-primary text-primary transition-all duration-200 rounded-xl">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+          <span class="text-label-mono font-label-mono text-[11px] uppercase">About</span>
+        </a>
+        <a onclick="closeMobileNav()" href="contact.html"
+          class="flex items-center justify-center gap-2 px-3 py-3 border border-primary bg-primary text-on-primary font-bold transition-all duration-200 rounded-xl">
+          <span class="material-symbols-outlined text-[18px]">mail</span>
+          <span class="text-label-mono font-label-mono text-[11px] uppercase">Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Backdrop -->
+  <div id="mobile-nav-backdrop" onclick="closeMobileNav()" style="display:none; pointer-events:auto;"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center w-full px-margin-mobile md:px-gutter py-16 md:py-24 max-w-container-max mx-auto relative overflow-hidden">
+    <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none -z-10">
+      <span class="text-[200px] font-display-hero-mobile font-black tracking-tighter text-surface-variant select-none whitespace-nowrap leading-none">AFIF</span>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full relative z-10 items-start">
+      <!-- Left Column: Heading & Direct Channels -->
+      <div class="lg:col-span-6 flex flex-col justify-between h-full pt-4 pb-8">
+        <div>
+          <span class="hero-anim hero-anim-1 text-label-mono font-label-mono text-text-muted uppercase tracking-widest block mb-2">// Direct Inquiries</span>
+          <h1 class="hero-anim hero-anim-2 text-display-hero-mobile md:text-display-hero font-display-hero-mobile md:font-display-hero text-primary mb-stack-lg leading-none tracking-tighter uppercase">
+            Let's<br>talk.
+          </h1>
+        </div>
+        <div class="hero-anim hero-anim-3 space-y-6 mt-8 border-l-2 border-primary/20 pl-6">
+          <div>
+            <p class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest mb-2">Email Address</p>
+            <a class="text-headline-md font-headline-md text-primary hover:text-text-muted transition-colors block break-all" href="mailto:asfirahammed8@gmail.com">asfirahammed8@gmail.com</a>
+          </div>
+          <div>
+            <p class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest mb-2">WhatsApp Channel</p>
+            <a class="text-body-lg font-body-lg text-primary hover:text-text-muted transition-colors" href="https://wa.me/8801618394205" target="_blank">01618394205</a>
+          </div>
+          <div>
+            <p class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest mb-2">Direct Phone</p>
+            <a class="text-body-lg font-body-lg text-primary hover:text-text-muted transition-colors" href="tel:01618394205">01618394205</a>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="pt-2">
+            <p class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest text-xs mb-3">// Instant Connect</p>
+            <div class="flex flex-col sm:flex-row flex-wrap gap-3">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/8801618394205" target="_blank"
+                class="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-surface-subtle/40 hover:bg-surface-subtle/80 border border-border-low-contrast hover:border-primary text-primary font-label-mono text-xs uppercase tracking-wider rounded transition-all duration-300">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+              <!-- Phone -->
+              <a href="tel:01618394205"
+                class="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-surface-subtle/40 hover:bg-surface-subtle/80 border border-border-low-contrast hover:border-primary text-primary font-label-mono text-xs uppercase tracking-wider rounded transition-all duration-300">
+                <span class="material-symbols-outlined text-[18px] shrink-0">phone</span>
+                <span>Call Us</span>
+              </a>
+              <!-- Messenger -->
+              <a href="https://www.facebook.com/messages/e2ee/t/9256187751153336" target="_blank" rel="noopener noreferrer"
+                class="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-surface-subtle/40 hover:bg-surface-subtle/80 border border-border-low-contrast hover:border-primary text-primary font-label-mono text-xs uppercase tracking-wider rounded transition-all duration-300">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0C5.373 0 0 4.974 0 11.111c0 3.498 1.744 6.614 4.469 8.654V24l4.088-2.242c1.092.3 2.246.464 3.443.464 6.627 0 12-4.975 12-11.111C24 4.974 18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26 6.559-6.963 3.13 3.259 5.889-3.259-6.56 6.964z" />
+                </svg>
+                <span>Messenger</span>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/alamgir.hossion.10297" target="_blank" rel="noopener noreferrer"
+                class="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-surface-subtle/40 hover:bg-surface-subtle/80 border border-border-low-contrast hover:border-primary text-primary font-label-mono text-xs uppercase tracking-wider rounded transition-all duration-300">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Contact Form -->
+      <div class="hero-anim hero-anim-4 lg:col-span-6 lg:col-start-7 flex flex-col justify-center mt-stack-lg lg:mt-0">
+        <form id="contact-page-form" class="w-full bg-surface-container-lowest/80 p-8 md:p-12 border border-border-low-contrast backdrop-blur-md shadow-2xl flex flex-col gap-6 rounded-xl" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key and Botcheck -->
+          <input type="hidden" name="access_key" value="3c1dac01-5453-4bbf-b043-d2d127479758">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input type="hidden" name="subject" value="New Contact Message from Portfolio Website">
+
+          <div class="space-y-2 relative group">
+            <label class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest block mb-2 text-xs" for="name">Your Name</label>
+            <input class="w-full bg-transparent border-b border-border-low-contrast focus:border-primary text-body-lg font-body-lg text-primary py-2 outline-none transition-colors" id="name" name="name" placeholder="John Doe" type="text" required>
+          </div>
+          <div class="space-y-2 relative group">
+            <label class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest block mb-2 text-xs" for="email">Your Email</label>
+            <input class="w-full bg-transparent border-b border-border-low-contrast focus:border-primary text-body-lg font-body-lg text-primary py-2 outline-none transition-colors" id="email" name="email" placeholder="asfirahammed8@gmail.com" type="email" required>
+          </div>
+          <div class="space-y-2 relative group">
+            <label class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest block mb-2 text-xs" for="phone">WhatsApp / Phone Number</label>
+            <input class="w-full bg-transparent border-b border-border-low-contrast focus:border-primary text-body-lg font-body-lg text-primary py-2 outline-none transition-colors" id="phone" name="phone" placeholder="01618394205" type="tel">
+          </div>
+          <div class="space-y-2 relative group">
+            <label class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest block mb-2 text-xs" for="message">Project Description / Message</label>
+            <textarea class="w-full bg-transparent border-b border-border-low-contrast focus:border-primary text-body-lg font-body-lg text-primary py-2 outline-none transition-colors resize-none" id="message" name="message" placeholder="Tell me about your project requirement..." rows="4" required></textarea>
+          </div>
+          <div id="contact-page-status" class="hidden text-xs font-label-mono px-4 py-3 border rounded transition-all duration-300"></div>
+          <div class="pt-4 flex justify-end">
+            <button id="contact-page-submit-btn" class="bg-primary text-on-primary text-label-mono font-label-mono uppercase tracking-widest px-8 py-4 font-bold flex items-center justify-center gap-4 hover:bg-surface-subtle hover:text-primary border border-primary transition-all duration-300 group rounded-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed" type="submit">
+              <span id="contact-page-btn-text">Send Message</span>
+              <span id="contact-page-btn-icon" class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform">arrow_forward</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-subtle/50 backdrop-blur-sm border-t border-border-low-contrast w-full px-gutter py-12 max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter text-body-md font-body-md relative overflow-hidden">
+    <div class="col-span-1 md:col-span-6 flex flex-col justify-between relative z-10">
+      <div class="text-primary font-bold">
+        ©2026 MD ASFIR AHAMMED AFIF — ALL RIGHTS RESERVED
+      </div>
+      <p class="text-text-muted mt-2 max-w-sm">
+        MERN Stack Full Stack Developer, Framer Motion &amp; UI/UX Specialist.
+      </p>
+    </div>
+    <div class="col-span-1 md:col-span-6 flex justify-start md:justify-end gap-stack-lg relative z-10 mt-4 md:mt-0">
+      <div class="flex flex-col gap-1">
+        <span class="text-label-mono font-label-mono text-text-muted uppercase tracking-widest mb-2">Contact &amp; Connect</span>
+        <a class="text-text-muted hover:text-primary transition-colors duration-300" href="mailto:asfirahammed8@gmail.com">Email: asfirahammed8@gmail.com</a>
+        <a class="text-text-muted hover:text-primary transition-colors duration-300" href="https://wa.me/8801618394205" target="_blank" rel="noopener noreferrer">WhatsApp: 01618394205</a>
+        <a class="text-text-muted hover:text-primary transition-colors duration-300" href="tel:01618394205">Phone: 01618394205</a>
+        <a class="text-text-muted hover:text-primary transition-colors duration-300" href="https://www.facebook.com/messages/e2ee/t/9256187751153336" target="_blank" rel="noopener noreferrer">Messenger: Direct Chat</a>
+        <a class="text-text-muted hover:text-primary transition-colors duration-300" href="https://www.facebook.com/alamgir.hossion.10297" target="_blank" rel="noopener noreferrer">Facebook Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      var drawer = document.getElementById('mobile-nav-drawer');
+      var backdrop = document.getElementById('mobile-nav-backdrop');
+      var icon = document.getElementById('mobile-nav-icon');
+      if (!drawer) return;
+      var isOpen = drawer.getAttribute('data-open') === 'true';
+      if (isOpen) {
+        closeMobileNav();
+      } else {
+        drawer.style.transform = 'translateY(0%)';
+        drawer.setAttribute('data-open', 'true');
+        if (backdrop) { backdrop.style.display = 'block'; }
+        if (icon) icon.textContent = 'close';
+      }
+    }
+    function closeMobileNav() {
+      var drawer = document.getElementById('mobile-nav-drawer');
+      var backdrop = document.getElementById('mobile-nav-backdrop');
+      var icon = document.getElementById('mobile-nav-icon');
+      if (drawer) {
+        drawer.style.transform = 'translateY(100%)';
+        drawer.setAttribute('data-open', 'false');
+      }
+      if (backdrop) backdrop.style.display = 'none';
+      if (icon) icon.textContent = 'menu';
+    }
+
+    // ── Hero loader bar + entrance animation ──
+    (function () {
+      var bar = document.getElementById('hero-loader-bar');
+      var heroEls = document.querySelectorAll('.hero-anim');
+      if (bar) requestAnimationFrame(function () { bar.style.width = '80%'; });
+      window.addEventListener('load', function () {
+        if (bar) {
+          bar.style.width = '100%';
+          setTimeout(function () { bar.style.opacity = '0'; }, 400);
+          setTimeout(function () { bar.style.display = 'none'; }, 900);
+        }
+        setTimeout(function () {
+          heroEls.forEach(function (el) { el.classList.add('hero-in'); });
+        }, 80);
+      });
+    })();
+
+    // ── Dynamic Glass Header on Scroll (Transparent at top, glass when scrolled) ──
+    (function () {
+      var header = document.getElementById('site-header');
+      if (!header) return;
+      function checkHeaderScroll() {
+        if (window.scrollY > 20) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      }
+      window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+      checkHeaderScroll();
+    })();
+
+    // ── Web3Forms Asynchronous AJAX Submission Handler ──
+    (function () {
+      var form = document.getElementById('contact-page-form');
+      var statusEl = document.getElementById('contact-page-status');
+      var submitBtn = document.getElementById('contact-page-submit-btn');
+      var btnText = document.getElementById('contact-page-btn-text');
+      var btnIcon = document.getElementById('contact-page-btn-icon');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // 1. Disable submit button & show sending state
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          if (btnText) btnText.textContent = 'Sending...';
+          if (btnIcon) btnIcon.textContent = 'hourglass_top';
+        }
+
+        // 2. Reset and hide previous status message
+        if (statusEl) {
+          statusEl.className = 'hidden text-xs font-label-mono px-4 py-3 border rounded transition-all duration-300';
+          statusEl.textContent = '';
+        }
+
+        // 3. Serialize form data to JSON for Web3Forms API
+        var formData = new FormData(form);
+        var object = Object.fromEntries(formData);
+        var json = JSON.stringify(object);
+
+        // 4. Send asynchronously via fetch()
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        })
+        .then(async function (response) {
+          var data = await response.json();
+          if (response.status === 200) {
+            // Success notification (matches portfolio dark monochromatic theme)
+            if (statusEl) {
+              statusEl.className = 'block text-xs font-label-mono px-4 py-3.5 border border-primary bg-surface-subtle/90 text-primary rounded-sm transition-all duration-300 shadow-xl';
+              statusEl.innerHTML = '<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-primary shrink-0">check_circle</span><div class="flex flex-col text-left"><span class="font-bold tracking-wider uppercase text-primary">Message Sent Successfully</span><span class="text-text-muted text-[11px] normal-case mt-0.5">' + (data.message || 'Thank you! I will get back to you shortly.') + '</span></div></div>';
+            }
+            form.reset();
+          } else {
+            // Web3Forms API error response
+            if (statusEl) {
+              statusEl.className = 'block text-xs font-label-mono px-4 py-3.5 border border-error/50 bg-surface-subtle/90 text-error rounded-sm transition-all duration-300 shadow-xl';
+              statusEl.innerHTML = '<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-error shrink-0">error</span><div class="flex flex-col text-left"><span class="font-bold tracking-wider uppercase text-error">Submission Failed</span><span class="text-text-muted text-[11px] normal-case mt-0.5">' + (data.message || 'Please check your inputs and try again.') + '</span></div></div>';
+            }
+          }
+        })
+        .catch(function (error) {
+          // Network or unexpected error
+          if (statusEl) {
+            statusEl.className = 'block text-xs font-label-mono px-4 py-3.5 border border-error/50 bg-surface-subtle/90 text-error rounded-sm transition-all duration-300 shadow-xl';
+            statusEl.innerHTML = '<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-error shrink-0">error</span><div class="flex flex-col text-left"><span class="font-bold tracking-wider uppercase text-error">Network Error</span><span class="text-text-muted text-[11px] normal-case mt-0.5">Please check your internet connection and try again.</span></div></div>';
+          }
+        })
+        .finally(function () {
+          // Re-enable submit button
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            if (btnText) btnText.textContent = 'Send Message';
+            if (btnIcon) btnIcon.textContent = 'arrow_forward';
+          }
+        });
+      });
+    })();
+
+    // ── Smooth Page-to-Page Transition Handler ──────────────────────
+    requestAnimationFrame(function () {
+      var mainEl = document.querySelector('main');
+      if (mainEl) mainEl.classList.add('page-loaded');
+    });
+
+    (function () {
+      var navLinks = document.querySelectorAll('a[href$=".html"]');
+      var progressBar = document.getElementById('page-progress-bar');
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          var targetUrl = this.getAttribute('href');
+          if (targetUrl && !targetUrl.startsWith('#') && !targetUrl.startsWith('http') && !this.getAttribute('target')) {
+            e.preventDefault();
+            var mainEl = document.querySelector('main');
+            if (mainEl) {
+              mainEl.classList.remove('page-loaded');
+              mainEl.classList.add('page-exiting');
+            }
+            if (progressBar) {
+              progressBar.style.width = '100%';
+            }
+            setTimeout(function () {
+              window.location.href = targetUrl;
+            }, 280);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
